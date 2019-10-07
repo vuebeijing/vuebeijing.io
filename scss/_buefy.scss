@@ -1,0 +1,42 @@
+@import "~bulma/sass/utilities/_all.sass";
+
+// Akkadu Base Color Palette
+$primary: hsl(359, 86%, 27%);
+$info: hsl(59, 86%, 61%);
+$success: hsl(150, 74%, 34%);
+$danger: hsl(359, 75%, 46%);
+$warning: hsl(45, 100%, 51%);
+$dark: hsl(0, 0%, 15%);
+
+// Color Inverts
+$primary-invert: findColorInvert($primary);
+$info-invert: findColorInvert($info);
+$success-invert: findColorInvert($success);
+$danger-invert: findColorInvert($danger);
+$warning-invert: findColorInvert($warning);
+$dark-invert: findColorInvert($dark);
+
+// Font Family Customizations
+$family-sans-serif: "FiraSans", sans-serif;
+$body-family: "FiraSans", sans-serif;
+
+$colors: (
+    "white": ($white, $black),
+    "black": ($black, $white),
+    "light": ($light, $light-invert),
+    "dark": ($dark, $dark-invert),
+    "primary": ($primary, $primary-invert),
+    "info": ($info, $info-invert),
+    "success": ($success, $success-invert),
+    "warning": ($warning, $warning-invert),
+    "danger": ($danger, $danger-invert),
+);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";

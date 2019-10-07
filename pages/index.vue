@@ -1,7 +1,6 @@
 <template>
   <section class="pb-32">
     <div class="jumbo relative pt-12">
-      <navbar class="z-10" />
       <div class="hero-wrapper">
         <div class="w-full bg-gray-900 absolute hero">
           <div class="hero-bg absolute" />
@@ -15,6 +14,7 @@
             <h1 class="font-bold text-5xl">Vue Beijing</h1>
             <p class="text-lg">Beijing's Point of Vue.</p>
             <p class="text-lg">The Official Vue.js meetup of Beijing.</p>
+            <p class="text-lg">北京官方Vue.js聚会。</p>
           </div>
         </div>
       </div>
@@ -23,20 +23,18 @@
       <h1 class="text-4xl text-center font-bold my-3">Upcoming Meetups</h1>
       <div class="flex flex-col items-center">
         <meetup-card />
+        <b-button type="is-success">Success</b-button>
       </div>
     </section>
   </section>
 </template>
 
 <script>
-import Navbar from '@/components/navbar/navbar.vue'
 import MeetupCard from '@/components/card/meetup-card.vue'
 
 export default {
   components: {
-    Navbar,
     MeetupCard
-
   }
 }
 </script>
@@ -58,6 +56,7 @@ html {
   bottom: 20px;
   width: 100%;
   overflow: hidden;
+  margin-top: -50px;
 
   .hero-bg {
     background: url('/slides-bg.jpg') center no-repeat;

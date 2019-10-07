@@ -5,7 +5,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Vue Beijing',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -15,41 +15,80 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  /*
-  ** Customize the progress-bar color
-  */
-  loading: { color: '#fff' },
-  /*
-  ** Global CSS
-  */
+
+  // Global CSS
   css: [
-    '~/assets/css/tailwind.css'
+    '~/scss/_buefy.scss',
+    '~/scss/_fonts.scss'
   ],
-  /*
-  ** Plugins to load before mounting the App
-  */
+
+  // Plugins
   plugins: [
+    'plugins/icons'
   ],
-  /*
-  ** Nuxt.js modules
-  */
+
+  // Modules
   modules: [
     '@nuxtjs/pwa',
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    'nuxt-buefy',
+    [
+      'nuxt-i18n',
+      {
+        locales: [
+          {
+            code: 'en',
+            file: 'en.js',
+            iso: 'en',
+            name: 'English'
+          },
+          {
+            code: 'zh',
+            file: 'zh.js',
+            iso: 'zh',
+            name: '中文'
+          }
+        ],
+        defaultLocale: 'en',
+        lazy: true,
+        langDir: 'i18n/lang/',
+        detectBrowserLanguage: {
+          useCookie: true,
+          cookieKey: 'i18n_redirected'
+        }
+      }
+    ],
+    '@nuxtjs/eslint-module',
+    ['nuxt-buefy', {
+      css: false,
+      materialDesignIcons: false,
+      defaultIconComponent: 'vue-fontawesome',
+      defaultIconPack: 'fas'
+    }],
+    '@nuxtjs/style-resources'
   ],
+  styleResources: {
+    scss: [
+      'scss/_variables.scss',
+      'scss/_utils.scss'
+    ]
+  },
   /*
   ** Build configuration
   */
   build: {
-    postcss: {
-      plugins: {
-        tailwindcss: './tailwind.config.js'
-      }
-    },
     /*
     ** You can extend webpack config here
     */
     extend(config, ctx) {
+      if (ctx.isDev && ctx.isClient) {
+        config.module.rules.push({
+          enforce: 'pre',
+          test: /\.(js|vue)$/,
+          loader: 'eslint-loader',
+          exclude: /(node_modules)/
+        })
+      }
     }
   }
 }

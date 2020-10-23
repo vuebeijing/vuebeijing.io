@@ -10,7 +10,7 @@
     :px="[8, 8, 24]"
     align="center"
     h="full"
-    pb="10"
+    py="10"
     :direction="['column', 'column', 'row']"
   >
     <c-stack color="white" :max-w="['auto', 'auto', '50vw']" :my="[8, 8, 0]" spacing="5">

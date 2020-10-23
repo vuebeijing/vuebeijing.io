@@ -23,6 +23,11 @@ export default {
     '@nuxtjs/emotion',
     '@nuxtjs/pwa'
   ],
+  pwa: {
+    meta: {
+      name: 'Vue Beijing'
+    }
+  },
   chakra: {
     icons: {
       iconPack: 'fa',

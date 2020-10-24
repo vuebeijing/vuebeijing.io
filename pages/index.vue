@@ -90,7 +90,7 @@
         :font-size="['lg', 'lg', '1.5em']"
         text-align="center"
       >
-        {{ daysLeft }} days to go • 剩余{{ daysLeft }}天
+        TODAY • 今天
       </c-badge>
     <!-- </c-dark-mode> -->
   </c-flex>

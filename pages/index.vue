@@ -39,7 +39,7 @@
         <c-flex>
           <c-icon size="24px" mr="2" name="map-pin" />
           <c-text>
-            北京市海淀区海淀大街甲36号439号中关村创业大街-12号楼 INNOPLANET
+            北京市海淀区海淀大街甲36号439号中关村创业大街12号楼5层（INNOPLANET）
           </c-text>
         </c-flex>
       </c-stack>

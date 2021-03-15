@@ -17,17 +17,17 @@
       <c-heading as="h3" :font-size="['lg', 'lg', 'xl']" font-weight="light">Join our next meetup!</c-heading>
       <div>
         <c-heading as="h1" :font-size="['2rem', '2rem', '4rem']">
-          Using Vite with Vue 3
+          Develop with Vite
         </c-heading>
         <c-heading as="h1" :font-size="['2rem', '2rem', '4rem']">
-          在 Vite 上使用 Vue 3
+          官方团队成员带你上手Vite
         </c-heading>
       </div>
       <c-stack spacing="4" color="yellow.300">
         <c-flex>
           <c-icon size="24px" mr="2" name="calendar-alt" />
           <c-text>
-            Sunday, October 25th, 2020 <br> 2020年10月25日，周日
+            Sunday, March 28th, 2021 <br> 2021年03月28日，周日
           </c-text>
         </c-flex>
         <c-flex>
@@ -39,8 +39,9 @@
         <c-flex>
           <c-icon size="24px" mr="2" name="map-pin" />
           <c-text>
-            北京市海淀区海淀大街甲36号439号中关村创业大街12号楼5层（INNOPLANET）
+            Online
           </c-text>
+          <!-- 北京市海淀区海淀大街甲36号439号中关村创业大街12号楼5层（INNOPLANET） -->
         </c-flex>
       </c-stack>
       <c-button
@@ -55,7 +56,13 @@
       </c-button>
     </c-stack>
     <c-stack flex-shrink="0" mx="auto">
-      <c-image flex-shrink="0" :src="require('@/assets/me-circle.png')" w="250px" mx="auto" h="250px" />
+      <c-image
+        rounded="full"
+        flex-shrink="0"
+        :src="require('@/assets/avatar.png')"
+        w="250px"
+        mx="auto"
+        h="250px"/>
       <c-box
         max-w="300px"
         font-weight="bold"
@@ -64,10 +71,10 @@
         text-align="center"
       >
         <c-text>
-          乔纳森
+          Anthony Fu
         </c-text>
         <c-text>
-          Jonathan Bakebwa
+          <c-icon size="24px" mr="2" name="email" /> hi@antfu.me
         </c-text>
         <c-text color="gray.50" font-size="md" font-weight="light">
           •
@@ -76,22 +83,22 @@
           UI Engineer & Co-founder at Akkadu, Creator of Chakra UI Vue
         </c-text> -->
         <c-text font-size="md" color="gray.50" font-weight="light">
-          Akkadu的联合创始人/ UI工程师，Chakra UI Vue的创建者，Vue北京见面的联合创始人
+          Core team member of Vue.js and Vite, fanatical full-time open sourceror.
         </c-text>
       </c-box>
     </c-stack>
     <!-- <c-dark-mode> -->
-      <c-badge
-        pos="absolute"
-        :top="4"
-        :left="[undefined, undefined, '100px']"
-        :right="[28, 28, undefined]"
-        variant-color="yellow"
-        :font-size="['lg', 'lg', '1.5em']"
-        text-align="center"
-      >
-        TODAY • 今天
-      </c-badge>
+    <c-badge
+      pos="absolute"
+      :top="4"
+      :left="[undefined, undefined, '100px']"
+      :right="[28, 28, undefined]"
+      variant-color="yellow"
+      :font-size="['lg', 'lg', '1.5em']"
+      text-align="center"
+    >
+      This Month • 本月
+    </c-badge>
     <!-- </c-dark-mode> -->
   </c-flex>
 </template>

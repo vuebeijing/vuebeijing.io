@@ -14,13 +14,15 @@
     :direction="['column', 'column', 'row']"
   >
     <c-stack color="white" :max-w="['auto', 'auto', '50vw']" :my="[8, 8, 0]" spacing="5">
-      <c-heading as="h3" :font-size="['lg', 'lg', 'xl']" font-weight="light">Join our next meetup!</c-heading>
+      <c-heading as="h3" :font-size="['lg', 'lg', 'xl']" font-weight="light">
+        Join our next meetup!
+      </c-heading>
       <div>
         <c-heading as="h1" :font-size="['2rem', '2rem', '4rem']">
           Develop with Vite
         </c-heading>
         <c-heading as="h1" :font-size="['2rem', '2rem', '4rem']">
-          官方团队成员带你上手Vite
+          Vite开发快速入门
         </c-heading>
       </div>
       <c-stack spacing="4" color="yellow.300">
@@ -39,9 +41,8 @@
         <c-flex>
           <c-icon size="24px" mr="2" name="map-pin" />
           <c-text>
-            Online
+            北京市海淀区中关村创业大街北门25号楼 中关村科学城国际人才港1层
           </c-text>
-          <!-- 北京市海淀区海淀大街甲36号439号中关村创业大街12号楼5层（INNOPLANET） -->
         </c-flex>
       </c-stack>
       <c-button
@@ -62,7 +63,8 @@
         :src="require('@/assets/avatar.png')"
         w="250px"
         mx="auto"
-        h="250px"/>
+        h="250px"
+      />
       <c-box
         max-w="300px"
         font-weight="bold"

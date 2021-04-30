@@ -18,18 +18,18 @@
         Join our next meetup!
       </c-heading>
       <div>
-        <c-heading as="h1" :font-size="['2rem', '2rem', '4rem']">
-          Develop with Vite
+        <c-heading as="h1" :font-size="['2rem', '2rem', '3rem']">
+          What's inside Vue Router 4
         </c-heading>
-        <c-heading as="h1" :font-size="['2rem', '2rem', '4rem']">
-          Vite开发快速入门
+        <c-heading as="h1" :font-size="['2rem', '2rem', '3rem']">
+          深入探讨 vue Router 4
         </c-heading>
       </div>
       <c-stack spacing="4" color="yellow.300">
         <c-flex>
           <c-icon size="24px" mr="2" name="calendar-alt" />
           <c-text>
-            Sunday, March 28th, 2021 <br> 2021年03月28日，周日
+            Sunday, May 9th, 2021 <br> 2021年05月09日，周日
           </c-text>
         </c-flex>
         <c-flex>
@@ -41,7 +41,7 @@
         <c-flex>
           <c-icon size="24px" mr="2" name="map-pin" />
           <c-text>
-            北京市海淀区中关村创业大街北门25号楼 中关村科学城国际人才港1层
+            ONLINE ZOOM VIDEO CONFERENCE | 在线ZOOM视频会议
           </c-text>
         </c-flex>
       </c-stack>
@@ -73,11 +73,11 @@
         text-align="center"
       >
         <c-text>
-          Anthony Fu
+          Eduardo San Martin
         </c-text>
-        <c-text>
-          <c-icon size="24px" mr="2" name="email" /> hi@antfu.me
-        </c-text>
+        <!-- <c-text>
+          <c-icon size="24px" mr="2" name="email" /> --
+        </c-text> -->
         <c-text color="gray.50" font-size="md" font-weight="light">
           •
         </c-text>
@@ -85,7 +85,7 @@
           UI Engineer & Co-founder at Akkadu, Creator of Chakra UI Vue
         </c-text> -->
         <c-text font-size="md" color="gray.50" font-weight="light">
-          Core team member of Vue.js and Vite, fanatical full-time open sourceror.
+          Vue Core 团队成员 Vue Router 和 Pinia的维护者
         </c-text>
       </c-box>
     </c-stack>
@@ -99,7 +99,7 @@
       :font-size="['lg', 'lg', '1.5em']"
       text-align="center"
     >
-      This Month • 本月
+      Sunday, May 9th, 2021| 2021年05月09日，周日
     </c-badge>
     <!-- </c-dark-mode> -->
   </c-flex>

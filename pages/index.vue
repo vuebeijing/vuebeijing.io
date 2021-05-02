@@ -51,7 +51,7 @@
         variant-color="red"
         mt="6"
         size="lg"
-        href="http://hdxu.cn/kkFH0"
+        href="http://hdxu.cn/kX21V"
       >
         Register now • 立即报名
       </c-button>

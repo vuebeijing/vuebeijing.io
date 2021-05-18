@@ -19,23 +19,23 @@
       </c-heading>
       <div>
         <c-heading as="h1" :font-size="['2rem', '2rem', '3rem']">
-          What's inside Vue Router 4
+          Online Meetup with Evan You
         </c-heading>
         <c-heading as="h1" :font-size="['2rem', '2rem', '3rem']">
-          深入探讨 vue Router 4
+          在线对话尤雨溪
         </c-heading>
       </div>
       <c-stack spacing="4" color="yellow.300">
         <c-flex>
           <c-icon size="24px" mr="2" name="calendar-alt" />
           <c-text>
-            Sunday, May 9th, 2021 <br> 2021年05月09日，周日
+            Sunday, May 23th, 2021 <br> 2021年05月23日，周日
           </c-text>
         </c-flex>
         <c-flex>
           <c-icon size="24px" mr="2" name="clock" />
           <c-text>
-            3:00PM - 5:00PM
+            7:00PM - 9:00PM
           </c-text>
         </c-flex>
         <c-flex>
@@ -51,7 +51,7 @@
         variant-color="red"
         mt="6"
         size="lg"
-        href="http://hdxu.cn/kX21V"
+        href="http://hdxu.cn/Mho0h"
       >
         Register now • 立即报名
       </c-button>
@@ -73,7 +73,7 @@
         text-align="center"
       >
         <c-text>
-          Eduardo San Martin
+          尤雨溪 • Evan You
         </c-text>
         <!-- <c-text>
           <c-icon size="24px" mr="2" name="email" /> --
@@ -85,7 +85,7 @@
           UI Engineer & Co-founder at Akkadu, Creator of Chakra UI Vue
         </c-text> -->
         <c-text font-size="md" color="gray.50" font-weight="light">
-          Vue Core 团队成员 Vue Router 和 Pinia的维护者
+          Vue.js创作者| Creator of Vue.js
         </c-text>
       </c-box>
     </c-stack>
@@ -99,7 +99,7 @@
       :font-size="['lg', 'lg', '1.5em']"
       text-align="center"
     >
-      Sunday, May 9th, 2021| 2021年05月09日，周日
+      This Month
     </c-badge>
     <!-- </c-dark-mode> -->
   </c-flex>

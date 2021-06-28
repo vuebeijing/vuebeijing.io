@@ -18,14 +18,13 @@
         Join our next meetup!
       </c-heading>
       <div>
-        <c-text>   Topic-1:徐英楠 清秋</c-text>
-        <c-heading as="h1" :font-size="['2rem', '2rem', '3rem']">
-          Workshop: 开发“一起看电影”网站
-        </c-heading>
-
-        <c-text>Topic-2:安昭玮, Agora高级工程师</c-text>
+        <c-text>Topic-1:安昭玮, Agora高级工程师</c-text>
         <c-heading as="h1" :font-size="['2rem', '2rem', '3rem']">
           如何为开源项目贡献代码
+        </c-heading>
+        <c-text>   Topic-2:徐英楠 清秋</c-text>
+        <c-heading as="h1" :font-size="['2rem', '2rem', '3rem']">
+          Workshop: 开发“一起看电影”网站
         </c-heading>
       </div>
       <c-stack spacing="4" color="yellow.300">
@@ -60,16 +59,15 @@
       </c-button>
     </c-stack>
 
-    <c-flex align="center">
+    <c-flex align="center" size="360px" justify="space-between">
       <c-flex align="flex-end">
         <c-box>
           <c-image
             rounded="full"
             flex-shrink="0"
             :src="require('@/assets/avatar.png')"
-            w="180px"
+
             mx="auto"
-            h="200px"
           />
           <c-box
             max-w="300px"
@@ -105,9 +103,8 @@
             rounded="full"
             flex-shrink="0"
             :src="require('@/assets/avatar_1.png')"
-            w="180px"
+
             mx="auto"
-            h="200px"
           />
           <c-box
             max-w="300px"

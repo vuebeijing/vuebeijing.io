@@ -18,30 +18,33 @@
         Join our next meetup!
       </c-heading>
       <div>
+        <c-text>   Topic-1:徐英楠 清秋</c-text>
         <c-heading as="h1" :font-size="['2rem', '2rem', '3rem']">
-          Online Meetup with Evan You
+          Workshop: 开发“一起看电影”网站
         </c-heading>
+
+        <c-text>Topic-2:安昭玮, Agora高级工程师</c-text>
         <c-heading as="h1" :font-size="['2rem', '2rem', '3rem']">
-          在线对话尤雨溪
+          如何为开源项目贡献代码
         </c-heading>
       </div>
       <c-stack spacing="4" color="yellow.300">
         <c-flex>
           <c-icon size="24px" mr="2" name="calendar-alt" />
           <c-text>
-            Sunday, May 23th, 2021 <br> 2021年05月23日，周日
+            Sunday, 4th July, 2021 <br> 2021年07月04日，周日
           </c-text>
         </c-flex>
         <c-flex>
           <c-icon size="24px" mr="2" name="clock" />
           <c-text>
-            7:00PM - 9:00PM
+            1:30pm - 5:45pm
           </c-text>
         </c-flex>
         <c-flex>
           <c-icon size="24px" mr="2" name="map-pin" />
           <c-text>
-            ONLINE ZOOM VIDEO CONFERENCE | 在线ZOOM视频会议
+            北京中关村e世界财富中心A座P2（星巴克入口旁边进入大厦电梯B2层）
           </c-text>
         </c-flex>
       </c-stack>
@@ -51,44 +54,88 @@
         variant-color="red"
         mt="6"
         size="lg"
-        href="http://hdxu.cn/Mho0h"
+        href="https://www.huodongxing.com/event/9603800427400"
       >
         Register now • 立即报名
       </c-button>
     </c-stack>
-    <c-stack flex-shrink="0" mx="auto">
-      <c-image
-        rounded="full"
-        flex-shrink="0"
-        :src="require('@/assets/avatar.png')"
-        w="250px"
-        mx="auto"
-        h="250px"
-      />
-      <c-box
-        max-w="300px"
-        font-weight="bold"
-        font-size="2xl"
-        mx="auto"
-        text-align="center"
-      >
-        <c-text>
-          尤雨溪 • Evan You
-        </c-text>
-        <!-- <c-text>
+
+    <c-flex align="center">
+      <c-flex align="flex-end">
+        <c-box>
+          <c-image
+            rounded="full"
+            flex-shrink="0"
+            :src="require('@/assets/avatar.png')"
+            w="180px"
+            mx="auto"
+            h="200px"
+          />
+          <c-box
+            max-w="300px"
+            font-weight="bold"
+            font-size="2xl"
+            mx="auto"
+            text-align="center"
+          >
+            <c-text>
+              徐英楠 清秋
+            </c-text>
+            <!-- <c-text>
           <c-icon size="24px" mr="2" name="email" /> --
         </c-text> -->
-        <c-text color="gray.50" font-size="md" font-weight="light">
-          •
-        </c-text>
-        <!-- <c-text mt="5" color="gray.50" font-size="md" font-weight="light">
+            <c-text color="gray.50" font-size="md" font-weight="light">
+              •
+            </c-text>
+            <!-- <c-text mt="5" color="gray.50" font-size="md" font-weight="light">
           UI Engineer & Co-founder at Akkadu, Creator of Chakra UI Vue
         </c-text> -->
-        <c-text font-size="md" color="gray.50" font-weight="light">
-          Vue.js创作者| Creator of Vue.js
-        </c-text>
-      </c-box>
-    </c-stack>
+            <c-text font-size="md" color="gray.50" font-weight="light">
+              -
+            </c-text>
+          </c-box>
+        </c-box>
+        <!-- </c-stack> -->
+      </c-flex>
+      <c-flex size="20px" />
+      <c-flex align="center" justify="center">
+        <!-- <c-stack flex-shrink="0" mx="auto"> -->
+        <c-box>
+          <c-image
+            rounded="full"
+            flex-shrink="0"
+            :src="require('@/assets/avatar_1.png')"
+            w="180px"
+            mx="auto"
+            h="200px"
+          />
+          <c-box
+            max-w="300px"
+            font-weight="bold"
+            font-size="2xl"
+            mx="auto"
+            text-align="center"
+          >
+            <c-text>
+              安昭玮
+            </c-text>
+            <!-- <c-text>
+          <c-icon size="24px" mr="2" name="email" /> --
+        </c-text> -->
+            <c-text color="gray.50" font-size="md" font-weight="light">
+              •
+            </c-text>
+            <!-- <c-text mt="5" color="gray.50" font-size="md" font-weight="light">
+          UI Engineer & Co-founder at Akkadu, Creator of Chakra UI Vue
+        </c-text> -->
+            <c-text font-size="md" color="gray.50" font-weight="light">
+              Agora高级工程师
+            </c-text>
+          </c-box>
+          <!-- </c-stack> -->
+        </c-box>
+      </c-flex>
+    </c-flex>
     <!-- <c-dark-mode> -->
     <c-badge
       pos="absolute"

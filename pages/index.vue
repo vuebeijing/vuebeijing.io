@@ -95,7 +95,7 @@
         </c-box>
         <!-- </c-stack> -->
       </c-flex>
-      <c-flex size="20px" />
+      <c-flex size="100px" />
       <c-flex align="center" justify="center">
         <!-- <c-stack flex-shrink="0" mx="auto"> -->
         <c-box>

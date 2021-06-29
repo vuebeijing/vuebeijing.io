@@ -18,11 +18,11 @@
         Join our next meetup!
       </c-heading>
       <div>
-        <c-text>Topic-1:安昭玮, Agora高级工程师</c-text>
+        <c-text>Topic-1:徐英楠, 民生银行信息科技部基础技术板块前端负责人, 开源贡献者</c-text>
         <c-heading as="h1" :font-size="['2rem', '2rem', '3rem']">
           如何为开源项目贡献代码
         </c-heading>
-        <c-text>   Topic-2:徐英楠 清秋</c-text>
+        <c-text>Topic-2:安昭玮, Agora高级工程师</c-text>
         <c-heading as="h1" :font-size="['2rem', '2rem', '3rem']">
           Workshop: 开发“一起看电影”网站
         </c-heading>
@@ -66,7 +66,6 @@
             rounded="full"
             flex-shrink="0"
             :src="require('@/assets/avatar.png')"
-
             mx="auto"
           />
           <c-box
@@ -77,7 +76,7 @@
             text-align="center"
           >
             <c-text>
-              徐英楠 清秋
+              徐英楠 
             </c-text>
             <!-- <c-text>
           <c-icon size="24px" mr="2" name="email" /> --
@@ -89,7 +88,7 @@
           UI Engineer & Co-founder at Akkadu, Creator of Chakra UI Vue
         </c-text> -->
             <c-text font-size="md" color="gray.50" font-weight="light">
-              -
+              民生银行信息科技部基础技术板块前端负责人, 开源贡献者
             </c-text>
           </c-box>
         </c-box>
@@ -103,7 +102,6 @@
             rounded="full"
             flex-shrink="0"
             :src="require('@/assets/avatar_1.png')"
-
             mx="auto"
           />
           <c-box

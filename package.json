@@ -20,9 +20,9 @@
     }
   },
   "dependencies": {
-    "@chakra-ui/nuxt": "^0.1.0",
+    "@chakra-ui/nuxt": "^0.3.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
-    "@nuxtjs/emotion": "^0.0.1",
+    "@nuxtjs/emotion": "^0.1.0",
     "@nuxtjs/pwa": "^3.0.2",
     "core-js": "^3.6.5",
     "nuxt": "^2.15.3"

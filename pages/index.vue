@@ -15,7 +15,7 @@
     :direction="['column', 'column', 'row']"
     gap="10"
   >
-    <c-stack color="white" w="auto" :mr="[null, null, 'auto']" :my="[8, 8, 0]" spacing="5">
+    <c-stack color="white" w="fit-content" :my="[8, 8, 0]" spacing="5">
       <c-heading as="h3" :font-size="['lg', 'lg', 'xl']" font-weight="light">
         Join our next meetup!
       </c-heading>
@@ -62,8 +62,8 @@
       </c-button>
     </c-stack>
 
-    <c-flex :align="['center', 'center', 'start']" :direction="['column', 'row']" justify-content="center">
-      <c-stack :mr="[0, 0, 5]" max-w="200px">
+    <c-flex :align="['center', 'center', 'start']" :direction="['column', 'row']" mx="auto" pt="10" justify-content="center">
+      <c-stack :mr="[0, 0, 5]" max-w="200px" mb="3">
         <c-aspect-ratio-box rounded="full" overflow="hidden" :ratio="1" w="200px">
           <c-image w="auto" h="auto" :src="require('@/assets/avatar.png')" />
         </c-aspect-ratio-box>

@@ -163,7 +163,7 @@ export default {
   computed: {
     timeDiff: (vm) => {
       const now = new Date(Date.now())
-      const eventdate = new Date('09/19/2021')
+      const eventdate = new Date('09/26/2021')
       const timeDiff = eventdate.getTime() - now.getTime()
       return timeDiff
     },

@@ -119,7 +119,7 @@
         <c-flex font-weight="bold" font-size="lg">
           <c-icon size="24px" mr="2" name="calendar-alt" />
           <c-text>
-            Sunday, September 19th, 2021 • 2021年09月19日，周日
+            Sunday, September 26th, 2021 • 2021年09月26日，周日
           </c-text>
         </c-flex>
         <c-flex font-weight="bold" font-size="lg">

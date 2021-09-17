@@ -125,7 +125,7 @@
         <c-flex font-weight="bold" font-size="lg">
           <c-icon size="24px" mr="2" name="clock" />
           <c-text>
-            7:00PM - 9:00PM
+            5:00PM - 8:30PM
           </c-text>
         </c-flex>
         <c-flex font-weight="bold" font-size="lg">

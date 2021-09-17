@@ -10,42 +10,128 @@
     :px="[8, 8, 24]"
     align="center"
     h="full"
-    w="full"
-    py="10"
+    :py="[4, 4, 10]"
     :direction="['column', 'column', 'row']"
-    gap="10"
   >
-    <c-stack color="white" w="fit-content" :my="[8, 8, 0]" spacing="5">
-      <c-heading as="h3" :font-size="['lg', 'lg', 'xl']" font-weight="light">
-        Join our next meetup!
-      </c-heading>
+    <c-flex justify="center">
+      <c-box
+        text-align="center"
+        bg="yellow.900"
+        px="6"
+        py="4"
+        rounded="lg"
+        :position="['relative', 'relative', 'absolute']"
+        :left="['unset', 'unset', '50%']"
+        :top="['unset', 'unset', 0]"
+        :transform="['unset', 'unset', 'translateX(-50%)']"
+      >
+        <client-only>
+          <vue-countdown v-slot="{ days, hours, minutes, seconds }" :time="timeDiff">
+            <c-stack align="center" text-transform="uppercase">
+              <c-text font-size="sm">
+                Next meetup ⏰
+              </c-text>
+              <c-stack is-inline>
+                <c-box>
+                  <c-heading text-align="center">
+                    {{ days }}
+                  </c-heading>
+                  <c-text :font-size="['0.7em', '0.7em', '1.5em']">
+                    Days
+                  </c-text>
+                </c-box>
+                <c-box as="span">
+                  :
+                </c-box>
+                <c-box>
+                  <c-heading text-align="center">
+                    {{ hours }}
+                  </c-heading>
+                  <c-text :font-size="['0.7em', '0.7em', '1.5em']">
+                    Hours
+                  </c-text>
+                </c-box>
+                <c-box as="span">
+                  :
+                </c-box>
+                <c-box>
+                  <c-heading text-align="center">
+                    {{ minutes }}
+                  </c-heading>
+                  <c-text :font-size="['0.7em', '0.7em', '1.5em']">
+                    Minutes
+                  </c-text>
+                </c-box>
+                <c-box as="span">
+                  :
+                </c-box>
+                <c-box>
+                  <c-heading text-align="center">
+                    {{ seconds }}
+                  </c-heading>
+                  <c-text :font-size="['0.7em', '0.7em', '1.5em']">
+                    Seconds
+                  </c-text>
+                </c-box>
+              </c-stack>
+            </c-stack>
+          </vue-countdown>
+        </client-only>
+      </c-box>
+    </c-flex>
+    <c-stack my="4" flex-shrink="0" :mx="['auto', 'auto', '100px']">
+      <c-image
+        rounded="full"
+        flex-shrink="0"
+        src="https://res.cloudinary.com/xtellar/image/upload/v1631854218/VueBeijng/1Iw_Mvud_400x400_nhkgz4.jpg"
+        w="150px"
+        mx="auto"
+        h="150px"
+      />
+      <c-box
+        max-w="300px"
+        font-weight="bold"
+        font-size="2xl"
+        mx="auto"
+        text-align="center"
+      >
+        <c-text>
+          Sébastien Chopin
+        </c-text>
+        <c-text color="gray.50" font-size="md" font-weight="light">
+          •
+        </c-text>
+        <c-text font-size="md" color="gray.50" font-weight="light">
+          Nuxt Labs 首席执行官 • Nuxt.js 核心团队
+        </c-text>
+        <c-text font-size="md" color="gray.50" font-weight="light">
+          CEO, Nuxt Labs • Nuxt.js Core Team
+        </c-text>
+      </c-box>
+    </c-stack>
+    <c-stack color="white" :max-w="['auto', 'auto', '50vw']" :my="[4, 4, 0]" spacing="5">
       <div>
-        <c-text>徐英楠, 民生银行信息科技部基础技术板块前端负责人, 开源贡献者</c-text>
-        <c-heading as="h1" :font-size="['2rem', '2rem', '3rem']">
-          如何为开源项目贡献代码
-        </c-heading>
-        <c-text>安昭玮, Agora高级工程师</c-text>
-        <c-heading as="h1" :font-size="['2rem', '2rem', '3rem']">
-          Workshop: 开发“一起看电影”网站
+        <c-heading as="h1" :font-size="['2rem', '2rem', '2.5rem']">
+          Nuxt 3 之旅 • The Journey to Nuxt 3
         </c-heading>
       </div>
       <c-stack spacing="4" color="yellow.300">
-        <c-flex>
+        <c-flex font-weight="bold" font-size="lg">
           <c-icon size="24px" mr="2" name="calendar-alt" />
           <c-text>
-            Sunday, 4th July, 2021 <br> 2021年07月04日，周日
+            Sunday, September 19th, 2021 • 2021年09月19日，周日
           </c-text>
         </c-flex>
-        <c-flex>
+        <c-flex font-weight="bold" font-size="lg">
           <c-icon size="24px" mr="2" name="clock" />
           <c-text>
-            1:30pm - 5:45pm
+            7:00PM - 9:00PM
           </c-text>
         </c-flex>
-        <c-flex>
+        <c-flex font-weight="bold" font-size="lg">
           <c-icon size="24px" mr="2" name="map-pin" />
           <c-text>
-            北京中关村e世界财富中心A座P2（星巴克入口旁边进入大厦电梯B2层）
+            ONLINE ZOOM VIDEO CONFERENCE | 在线ZOOM视频会议
           </c-text>
         </c-flex>
       </c-stack>
@@ -55,85 +141,34 @@
         variant-color="red"
         mt="6"
         size="lg"
-        align-self="start"
-        href="https://www.huodongxing.com/event/9603800427400"
+        align-self="flex-start"
+        :py="[4, 4, 10]"
+        :px="[6, 6, 10]"
+        :font-size="['lg', 'lg', '2xl']"
+        href="http://hdxu.cn/D9oun"
       >
         Register now • 立即报名
       </c-button>
     </c-stack>
-
-    <c-flex :align="['center', 'center', 'start']" :direction="['column', 'row']" mx="auto" pt="10" justify-content="center">
-      <c-stack :mr="[0, 0, 5]" max-w="200px" mb="3">
-        <c-aspect-ratio-box rounded="full" overflow="hidden" :ratio="1" w="200px">
-          <c-image w="auto" h="auto" :src="require('@/assets/avatar.png')" />
-        </c-aspect-ratio-box>
-        <c-box
-          font-weight="bold"
-          font-size="2xl"
-          mx="auto"
-          text-align="center"
-        >
-          <c-text>
-            徐英楠
-          </c-text>
-          <c-text color="gray.50" font-size="md" font-weight="light">
-            •
-          </c-text>
-          <c-text font-size="md" color="gray.50" font-weight="light">
-            民生银行信息科技部基础技术板块前端负责人, 开源贡献者
-          </c-text>
-        </c-box>
-      </c-stack>
-      <c-stack>
-        <c-aspect-ratio-box rounded="full" overflow="hidden" :ratio="1" w="200px">
-          <c-image w="auto" h="auto" :src="require('@/assets/avatar_1.png')" />
-        </c-aspect-ratio-box>
-        <c-box
-          font-weight="bold"
-          font-size="2xl"
-          mx="auto"
-          text-align="center"
-        >
-          <c-text>
-            安昭玮
-          </c-text>
-          <c-text color="gray.50" font-size="md" font-weight="light">
-            •
-          </c-text>
-          <c-text font-size="md" color="gray.50" font-weight="light">
-            Agora高级工程师
-          </c-text>
-        </c-box>
-      </c-stack>
-    </c-flex>
-    <!-- <c-dark-mode> -->
-    <c-badge
-      pos="absolute"
-      :top="4"
-      :left="[28, 28, '100px']"
-      :right="[null, null, 'auto']"
-      variant-color="yellow"
-      :font-size="['lg', 'lg', '1.5em']"
-      text-align="center"
-      px="5"
-      py="2"
-      rounded="lg"
-    >
-      📅 4th July, 2021
-    </c-badge>
-    <!-- </c-dark-mode> -->
   </c-flex>
 </template>
 
 <script>
+import VueCountdown from '@chenfengyuan/vue-countdown'
 export default {
   name: 'Home',
+  components: {
+    VueCountdown
+  },
   computed: {
-    daysLeft () {
+    timeDiff: (vm) => {
       const now = new Date(Date.now())
-      const eventdate = new Date('10/25/2020')
+      const eventdate = new Date('09/19/2021')
       const timeDiff = eventdate.getTime() - now.getTime()
-      const daysDiff = timeDiff / (1000 * 3600 * 24)
+      return timeDiff
+    },
+    daysLeft () {
+      const daysDiff = this.timeDiff / (1000 * 3600 * 24)
       return Math.ceil(daysDiff)
     }
   }

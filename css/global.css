@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 300;
+  font-display: block;
+  src: url(/fonts/Sora-Light.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(/fonts/Sora-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src: url(/fonts/Sora-Bold.woff2) format("woff2");
+}

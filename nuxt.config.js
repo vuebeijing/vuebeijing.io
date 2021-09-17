@@ -11,7 +11,9 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
-      { rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' }
+      { rel: 'preload', hid: 'font-Bold', href: '/fonts/Sora-Bold.woff2', as: 'font', type: 'font/woff2', crossOrigin: 'anonymous' },
+      { rel: 'preload', hid: 'font-Light', href: '/fonts/Sora-Light.woff2', as: 'font', type: 'font/woff2', crossOrigin: 'anonymous' },
+      { rel: 'preload', hid: 'font-Regular', href: '/fonts/Sora-Regular.woff2', as: 'font', type: 'font/woff2', crossOrigin: 'anonymous' }
     ]
   },
   components: true,
@@ -28,6 +30,9 @@ export default {
       name: 'Vue Beijing'
     }
   },
+  css: [
+    'css/global.css'
+  ],
   chakra: {
     icons: {
       iconPack: 'fa',
@@ -35,8 +40,8 @@ export default {
     },
     extendTheme: {
       fonts: {
-        body: '\'Inter\', sans-serif;',
-        heading: '\'Inter\', sans-serif;'
+        body: '\'Sora\', sans-serif;',
+        heading: '\'Sora\', sans-serif;'
       }
     }
   }

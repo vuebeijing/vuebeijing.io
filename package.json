@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@chakra-ui/nuxt": "^0.3.3",
+    "@chenfengyuan/vue-countdown": "^1.1.5",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@nuxtjs/emotion": "^0.1.0",
     "@nuxtjs/pwa": "^3.0.2",

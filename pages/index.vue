@@ -125,7 +125,7 @@
         <c-flex font-weight="bold" font-size="lg">
           <c-icon size="24px" mr="2" name="clock" />
           <c-text>
-            5:00PM - 8:30PM
+            4:50PM - 6:30PM
           </c-text>
         </c-flex>
         <c-flex font-weight="bold" font-size="lg">
@@ -163,7 +163,8 @@ export default {
   computed: {
     timeDiff: (vm) => {
       const now = new Date(Date.now())
-      const eventdate = new Date('09/26/2021')
+      // const eventdate = new Date('09/26/2021')
+      const eventdate = new Date('September 26, 2021 16:50:00')
       const timeDiff = eventdate.getTime() - now.getTime()
       return timeDiff
     },
